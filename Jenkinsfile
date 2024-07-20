@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'composer:latest'
-            args '-v /var/run/docker.sock:/var/run/docker.sock -v ${WORKSPACE}:/workspace -w /workspace'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
     stages {
